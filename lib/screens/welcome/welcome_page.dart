@@ -1,14 +1,9 @@
 import 'package:carex/theme/colors.dart';
 import 'package:flutter/material.dart';
 
-class WelcomePage extends StatefulWidget {
+class WelcomePage extends StatelessWidget {
   const WelcomePage({Key? key}) : super(key: key);
 
-  @override
-  _WelcomePageState createState() => _WelcomePageState();
-}
-
-class _WelcomePageState extends State<WelcomePage> {
   @override
   Widget build(BuildContext context) {
     final Size size = MediaQuery.of(context).size;
