@@ -28,11 +28,12 @@ class WelcomePage extends StatelessWidget {
                   SizedBox(
                     height: size.height * 0.1,
                   ),
-                  const Image(
-                    image: AssetImage(
+                  Image(
+                    image: const AssetImage(
                       'assets/images/welcome.png',
                     ),
-                    fit: BoxFit.fill,
+                    fit: BoxFit.scaleDown,
+                    height: size.height / 2.5,
                   ),
                 ],
               ),
@@ -57,8 +58,8 @@ class WelcomePage extends StatelessWidget {
                   ElevatedButton(
                     onPressed: () {},
                     style: ElevatedButton.styleFrom(
-                      minimumSize: const Size.fromHeight(50), 
-                      primary: AppColors.skyBlue// NEW
+                      minimumSize: const Size.fromHeight(50),
+                      primary: AppColors.skyBlue,
                     ),
                     child: const Text(
                       "Getting Started",
