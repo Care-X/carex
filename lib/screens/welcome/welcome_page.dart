@@ -1,3 +1,4 @@
+import 'package:carex/screens/signup/signup_page.dart';
 import 'package:carex/theme/colors.dart';
 import 'package:flutter/material.dart';
 
@@ -13,6 +14,7 @@ class WelcomePage extends StatelessWidget {
         child: Container(
           width: size.width,
           height: size.height,
+          color: AppColors.white,
           padding: EdgeInsets.only(
               left: 20,
               right: 20,
@@ -56,7 +58,15 @@ class WelcomePage extends StatelessWidget {
                     height: size.height * 0.08,
                   ),
                   ElevatedButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.of(context).push(
+                        MaterialPageRoute(
+                          builder: (_) {
+                            return const SignUp();
+                          },
+                        ),
+                      );
+                    },
                     style: ElevatedButton.styleFrom(
                       minimumSize: const Size.fromHeight(50),
                       primary: AppColors.skyBlue,
@@ -74,23 +84,26 @@ class WelcomePage extends StatelessWidget {
                   ),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
-                    children: const [
-                      Text(
+                    children: [
+                      const Text(
                         "Already have an acount ? ",
                         style: TextStyle(
                           fontSize: 18.0,
                         ),
                       ),
-                      Text(
-                        "Login",
-                        style: TextStyle(
-                          fontSize: 18.0,
-                          fontWeight: FontWeight.w600,
-                          color: AppColors.skyBlue,
+                      GestureDetector(
+                        onTap: () {},
+                        child: const Text(
+                          "Login",
+                          style: TextStyle(
+                            fontSize: 18.0,
+                            fontWeight: FontWeight.w600,
+                            color: AppColors.skyBlue,
+                          ),
                         ),
                       ),
                     ],
-                  )
+                  ),
                 ],
               ),
             ],
