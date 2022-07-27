@@ -1,15 +1,15 @@
-import 'package:carex/screens/login/login_page.dart';
+import 'package:carex/screens/signup/signup_page.dart';
 import 'package:flutter/material.dart';
 import 'package:carex/theme/colors.dart';
 
-class SignUp extends StatefulWidget {
-  const SignUp({Key? key}) : super(key: key);
+class Login extends StatefulWidget {
+  const Login({Key? key}) : super(key: key);
 
   @override
-  State<SignUp> createState() => _SignUpState();
+  State<Login> createState() => _LoginState();
 }
 
-class _SignUpState extends State<SignUp> {
+class _LoginState extends State<Login> {
   @override
   Widget build(BuildContext context) {
     final Size size = MediaQuery.of(context).size;
@@ -55,7 +55,7 @@ class _SignUpState extends State<SignUp> {
                         right: 0.0,
                         left: 0.0,
                         child: Container(
-                          height: size.height / 1.88,
+                          height: size.height / 2.35,
                           padding: const EdgeInsets.fromLTRB(30, 30, 30, 0),
                           decoration: const BoxDecoration(
                             color: AppColors.white,
@@ -70,7 +70,7 @@ class _SignUpState extends State<SignUp> {
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 Text(
-                                  "Create \nAccount",
+                                  "Login",
                                   style: TextStyle(
                                     fontSize: size.height * 0.05,
                                     fontWeight: FontWeight.w400,
@@ -126,30 +126,6 @@ class _SignUpState extends State<SignUp> {
                                   ),
                                 ),
                                 const SizedBox(
-                                  height: 7.0,
-                                ),
-                                Container(
-                                  decoration: BoxDecoration(
-                                    color: const Color.fromARGB(
-                                        255, 219, 219, 219),
-                                    borderRadius: BorderRadius.circular(10),
-                                  ),
-                                  child: const Padding(
-                                    padding:
-                                        EdgeInsets.fromLTRB(8.0, 0.0, 8.0, 0.0),
-                                    child: TextField(
-                                      decoration: InputDecoration(
-                                        icon: Icon(Icons.password_rounded),
-                                        iconColor: AppColors.skyBlue,
-                                        border: InputBorder.none,
-                                        hintText: "Confirm Password",
-                                      ),
-                                      obscureText: true,
-                                      enableInteractiveSelection: false,
-                                    ),
-                                  ),
-                                ),
-                                const SizedBox(
                                   height: 12.0,
                                 ),
                                 ElevatedButton(
@@ -159,7 +135,7 @@ class _SignUpState extends State<SignUp> {
                                     primary: AppColors.skyBlue,
                                   ),
                                   child: const Text(
-                                    "Sign Up",
+                                    "Login",
                                     style: TextStyle(
                                       fontSize: 18.0,
                                       fontWeight: FontWeight.w600,
@@ -220,7 +196,7 @@ class _SignUpState extends State<SignUp> {
                                   mainAxisAlignment: MainAxisAlignment.center,
                                   children: [
                                     const Text(
-                                      "Already have an acount ? ",
+                                      "Don't have an acount ? ",
                                       style: TextStyle(
                                         fontSize: 18.0,
                                       ),
@@ -230,13 +206,13 @@ class _SignUpState extends State<SignUp> {
                                         Navigator.of(context).push(
                                           MaterialPageRoute(
                                             builder: (_) {
-                                              return const Login();
+                                              return const SignUp();
                                             },
                                           ),
                                         );
                                       },
                                       child: const Text(
-                                        "Login",
+                                        "Sign Up",
                                         style: TextStyle(
                                           fontSize: 18.0,
                                           fontWeight: FontWeight.w500,

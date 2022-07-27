@@ -1,3 +1,4 @@
+import 'package:carex/screens/login/login_page.dart';
 import 'package:carex/screens/signup/signup_page.dart';
 import 'package:carex/theme/colors.dart';
 import 'package:flutter/material.dart';
@@ -92,7 +93,15 @@ class WelcomePage extends StatelessWidget {
                         ),
                       ),
                       GestureDetector(
-                        onTap: () {},
+                        onTap: () {
+                          Navigator.of(context).push(
+                            MaterialPageRoute(
+                              builder: (_) {
+                                return const Login();
+                              },
+                            ),
+                          );
+                        },
                         child: const Text(
                           "Login",
                           style: TextStyle(
