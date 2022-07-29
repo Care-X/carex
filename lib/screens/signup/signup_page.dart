@@ -1,15 +1,15 @@
-import 'package:carex/screens/login/login_page.dart';
+import 'package:carex/screens/login/login_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:carex/theme/colors.dart';
 
-class SignUp extends StatefulWidget {
-  const SignUp({Key? key}) : super(key: key);
+class SignUpPage extends StatefulWidget {
+  const SignUpPage({Key? key}) : super(key: key);
 
   @override
-  State<SignUp> createState() => _SignUpState();
+  State<SignUpPage> createState() => _SignUpPageState();
 }
 
-class _SignUpState extends State<SignUp> {
+class _SignUpPageState extends State<SignUpPage> {
   @override
   Widget build(BuildContext context) {
     final Size size = MediaQuery.of(context).size;
@@ -41,7 +41,7 @@ class _SignUpState extends State<SignUp> {
                             children: [
                               Image(
                                 image: const AssetImage(
-                                  'assets/images/signup.png',
+                                  'assets/images/SignUpPage.png',
                                 ),
                                 fit: BoxFit.scaleDown,
                                 height: size.height / 2.5,
@@ -55,7 +55,7 @@ class _SignUpState extends State<SignUp> {
                         right: 0.0,
                         left: 0.0,
                         child: Container(
-                          height: size.height / 1.88,
+                          height: size.height / 1.87,
                           padding: const EdgeInsets.fromLTRB(30, 30, 30, 0),
                           decoration: const BoxDecoration(
                             color: AppColors.white,
@@ -230,7 +230,7 @@ class _SignUpState extends State<SignUp> {
                                         Navigator.of(context).push(
                                           MaterialPageRoute(
                                             builder: (_) {
-                                              return const Login();
+                                              return const LoginPage();
                                             },
                                           ),
                                         );

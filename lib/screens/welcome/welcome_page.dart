@@ -1,4 +1,4 @@
-import 'package:carex/screens/login/login_page.dart';
+import 'package:carex/screens/login/login_screen.dart';
 import 'package:carex/screens/signup/signup_page.dart';
 import 'package:carex/theme/colors.dart';
 import 'package:flutter/material.dart';
@@ -63,7 +63,7 @@ class WelcomePage extends StatelessWidget {
                       Navigator.of(context).push(
                         MaterialPageRoute(
                           builder: (_) {
-                            return const SignUp();
+                            return const SignUpPage();
                           },
                         ),
                       );
@@ -97,7 +97,7 @@ class WelcomePage extends StatelessWidget {
                           Navigator.of(context).push(
                             MaterialPageRoute(
                               builder: (_) {
-                                return const Login();
+                                return const LoginPage();
                               },
                             ),
                           );

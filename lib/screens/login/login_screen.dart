@@ -2,14 +2,14 @@ import 'package:carex/screens/signup/signup_page.dart';
 import 'package:flutter/material.dart';
 import 'package:carex/theme/colors.dart';
 
-class Login extends StatefulWidget {
-  const Login({Key? key}) : super(key: key);
+class LoginPage extends StatefulWidget {
+  const LoginPage({Key? key}) : super(key: key);
 
   @override
-  State<Login> createState() => _LoginState();
+  State<LoginPage> createState() => _LoginPageState();
 }
 
-class _LoginState extends State<Login> {
+class _LoginPageState extends State<LoginPage> {
   @override
   Widget build(BuildContext context) {
     final Size size = MediaQuery.of(context).size;
@@ -41,7 +41,7 @@ class _LoginState extends State<Login> {
                             children: [
                               Image(
                                 image: const AssetImage(
-                                  'assets/images/signup.png',
+                                  'assets/images/SignUpPage.png',
                                 ),
                                 fit: BoxFit.scaleDown,
                                 height: size.height / 2.5,
@@ -206,7 +206,7 @@ class _LoginState extends State<Login> {
                                         Navigator.of(context).push(
                                           MaterialPageRoute(
                                             builder: (_) {
-                                              return const SignUp();
+                                              return const SignUpPage();
                                             },
                                           ),
                                         );
