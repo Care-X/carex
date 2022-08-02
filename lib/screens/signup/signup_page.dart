@@ -1,69 +1,68 @@
-import 'package:carex/screens/login/login_screen.dart';
+import 'package:carex/screens/login/login_page.dart';
 import 'package:flutter/material.dart';
 import 'package:carex/theme/colors.dart';
 
-class SignUpPage extends StatefulWidget {
-  const SignUpPage({Key? key}) : super(key: key);
+class SignUp extends StatefulWidget {
+  const SignUp({Key? key}) : super(key: key);
 
   @override
-  State<SignUpPage> createState() => _SignUpPageState();
+  State<SignUp> createState() => _SignUpState();
 }
 
-class _SignUpPageState extends State<SignUpPage> {
+class _SignUpState extends State<SignUp> {
   @override
   Widget build(BuildContext context) {
     final Size size = MediaQuery.of(context).size;
-    return SafeArea(
-      child: Scaffold(
-        backgroundColor: AppColors.skyBlue,
-        body: Center(
-          child: SingleChildScrollView(
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.center,
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                Container(
-                  padding: const EdgeInsets.fromLTRB(5, 0, 5, 0),
-                  height: size.height - size.height * 0.04,
-                  width: size.width,
-                  child: Stack(
-                    children: [
-                      Column(
-                        mainAxisAlignment: MainAxisAlignment.start,
-                        // crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          // IconButton(
-                          //   onPressed: () {},
-                          //   icon: Icon(Icons.arrow_back_ios_new_rounded),
-                          // ),
-                          Row(
-                            mainAxisAlignment: MainAxisAlignment.center,
-                            children: [
-                              Image(
-                                image: const AssetImage(
-                                  'assets/images/SignUpPage.png',
-                                ),
-                                fit: BoxFit.scaleDown,
-                                height: size.height / 2.5,
+    return Scaffold(
+      body: Center(
+        child: SingleChildScrollView(
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.center,
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              Container(
+                padding: const EdgeInsets.fromLTRB(0, 0, 0, 0),
+                height: size.height,
+                width: size.width,
+                child: Stack(
+                  children: [
+                    Column(
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      // crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        // IconButton(
+                        //   onPressed: () {},
+                        //   icon: Icon(Icons.arrow_back_ios_new_rounded),
+                        // ),
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Image(
+                              image: const AssetImage(
+                                'assets/images/img-2.png',
                               ),
-                            ],
-                          ),
-                        ],
-                      ),
-                      Positioned(
-                        bottom: 0.0,
-                        right: 0.0,
-                        left: 0.0,
-                        child: Container(
-                          height: size.height / 1.87,
-                          padding: const EdgeInsets.fromLTRB(30, 30, 30, 0),
-                          decoration: const BoxDecoration(
-                            color: AppColors.white,
-                            borderRadius: BorderRadius.only(
-                              topLeft: Radius.circular(20.0),
-                              topRight: Radius.circular(20.0),
+                              fit: BoxFit.scaleDown,
+                              height: size.height / 2.2,
                             ),
+                          ],
+                        ),
+                      ],
+                    ),
+                    Positioned(
+                      bottom: 0.0,
+                      right: 0.0,
+                      left: 0.0,
+                      child: Container(
+                        height: size.height / 1.8,
+                        padding: const EdgeInsets.fromLTRB(30, 20, 30, 0),
+                        decoration: const BoxDecoration(
+                          color: AppColors.white,
+                          borderRadius: BorderRadius.only(
+                            topLeft: Radius.circular(20.0),
+                            topRight: Radius.circular(20.0),
                           ),
+                        ),
+                        child: Expanded(
                           child: SingleChildScrollView(
                             child: Column(
                               mainAxisAlignment: MainAxisAlignment.start,
@@ -181,7 +180,7 @@ class _SignUpPageState extends State<SignUpPage> {
                                             height: 50,
                                           )),
                                     ),
-                                    const Text("or"),
+                                    const Text("OR"),
                                     Expanded(
                                       child: Container(
                                           margin: const EdgeInsets.only(
@@ -230,7 +229,7 @@ class _SignUpPageState extends State<SignUpPage> {
                                         Navigator.of(context).push(
                                           MaterialPageRoute(
                                             builder: (_) {
-                                              return const LoginPage();
+                                              return const Login();
                                             },
                                           ),
                                         );
@@ -246,16 +245,19 @@ class _SignUpPageState extends State<SignUpPage> {
                                     ),
                                   ],
                                 ),
+                                const SizedBox(
+                                  height: 20,
+                                )
                               ],
                             ),
                           ),
                         ),
                       ),
-                    ],
-                  ),
+                    ),
+                  ],
                 ),
-              ],
-            ),
+              ),
+            ],
           ),
         ),
       ),
