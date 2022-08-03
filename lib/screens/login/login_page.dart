@@ -1,3 +1,6 @@
+// ignore: unused_import
+import 'package:carex/screens/home/home_page.dart';
+import 'package:carex/screens/main_screen/main_page.dart';
 import 'package:carex/screens/signup/signup_page.dart';
 import 'package:flutter/material.dart';
 import 'package:carex/theme/colors.dart';
@@ -127,7 +130,15 @@ class _LoginState extends State<Login> {
                                 height: 12.0,
                               ),
                               ElevatedButton(
-                                onPressed: () {},
+                                onPressed: () {
+                                  Navigator.of(context).push(
+                                    MaterialPageRoute(
+                                      builder: (_) {
+                                        return  const MainScreen();
+                                      },
+                                    ),
+                                  );
+                                },
                                 style: ElevatedButton.styleFrom(
                                   minimumSize: const Size.fromHeight(50),
                                   primary: AppColors.skyBlue,

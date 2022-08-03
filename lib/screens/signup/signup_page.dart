@@ -2,6 +2,8 @@ import 'package:carex/screens/login/login_page.dart';
 import 'package:flutter/material.dart';
 import 'package:carex/theme/colors.dart';
 
+import '../main_screen/main_page.dart';
+
 class SignUp extends StatefulWidget {
   const SignUp({Key? key}) : super(key: key);
 
@@ -41,7 +43,7 @@ class _SignUpState extends State<SignUp> {
                               image: const AssetImage(
                                 'assets/images/img-2.png',
                               ),
-                              fit: BoxFit.scaleDown,
+                              fit: BoxFit.fill,
                               height: size.height / 2.2,
                             ),
                           ],
@@ -152,7 +154,15 @@ class _SignUpState extends State<SignUp> {
                                   height: 12.0,
                                 ),
                                 ElevatedButton(
-                                  onPressed: () {},
+                                  onPressed: () {
+                                    Navigator.of(context).push(
+                                    MaterialPageRoute(
+                                      builder: (_) {
+                                        return  const MainScreen();
+                                      },
+                                    ),
+                                  );
+                                  },
                                   style: ElevatedButton.styleFrom(
                                     minimumSize: const Size.fromHeight(50),
                                     primary: AppColors.skyBlue,
