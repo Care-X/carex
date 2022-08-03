@@ -11,7 +11,13 @@ class ProfilePage extends StatelessWidget {
     final Size size = MediaQuery.of(context).size;
     return Scaffold(
       appBar: AppBar(
-        title: const Text('My Profile'),
+        title: const Text(
+          'My Profile',
+          style: TextStyle(
+            fontWeight: FontWeight.w500,
+            fontSize: 26,
+          ),
+        ),
         elevation: 0,
         actions: [
           InkWell(
@@ -22,10 +28,10 @@ class ProfilePage extends StatelessWidget {
               padding: const EdgeInsets.only(right: kDefaultPadding / 2),
               child: Row(
                 children: const [
-                  Icon(Icons.report_gmailerrorred_outlined),
+                  Icon(Icons.edit),
                   kHalfWidthSizedBox,
                   Text(
-                    'Report',
+                    'Edit',
                     style: TextStyle(
                       fontSize: 20.0,
                     ),
@@ -35,84 +41,96 @@ class ProfilePage extends StatelessWidget {
             ),
           )
         ],
+        backgroundColor: AppColors.skyBlue,
       ),
-      body: Container(
-        color: kOtherColor,
-        child: Column(
-          children: [
-            Container(
-              width: double.infinity,
-              height: 150,
-              decoration: BoxDecoration(
-                color: Colors.blue[200],
-                borderRadius: const BorderRadius.only(
-                  bottomRight: Radius.circular(kDefaultPadding * 2),
-                  bottomLeft: Radius.circular(kDefaultPadding * 2),
+      body: SingleChildScrollView(
+        child: Container(
+          color: kOtherColor,
+          child: Column(
+            children: [
+              Container(
+                width: double.infinity,
+                height: 150,
+                decoration: const BoxDecoration(
+                  color: AppColors.skyBlue,
+                  borderRadius: BorderRadius.only(
+                    bottomRight: Radius.circular(kDefaultPadding * 2),
+                    bottomLeft: Radius.circular(kDefaultPadding * 2),
+                  ),
+                ),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    const CircleAvatar(
+                      maxRadius: 50.0,
+                      minRadius: 50.0,
+                      backgroundColor: AppColors.white,
+                      backgroundImage:
+                          AssetImage('assets/images/ana_de_armas.jpeg'),
+                    ),
+                    kWidthSizedBox,
+                    Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: const [
+                        Text(
+                          'Ana De Armas',
+                          style: TextStyle(
+                            color: AppColors.white,
+                            fontSize: 20.0,
+                          ),
+                        ),
+                        Text(
+                          '@ana',
+                          style: TextStyle(
+                            color: AppColors.lightblack,
+                            fontSize: 20.0,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ],
                 ),
               ),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.center,
+              Column(
                 children: [
-                  const CircleAvatar(
-                    maxRadius: 50.0,
-                    minRadius: 50.0,
-                    backgroundColor: AppColors.white,
-                    backgroundImage:
-                        AssetImage('assets/images/ana_de_armas.jpeg'),
-                  ),
-                  kWidthSizedBox,
-                  Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    mainAxisAlignment: MainAxisAlignment.center,
+                  sizedBox,
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceAround,
                     children: const [
-                      Text(
-                        'Ana De Armas',
-                        style: TextStyle(
-                          color: AppColors.black,
-                          fontSize: 20.0,
-                        ),
-                      ),
-                      Text(
-                        '@ana',
-                        style: TextStyle(
-                          color: AppColors.lightblack,
-                          fontSize: 20.0,
-                        ),
-                      ),
+                      ProfileDetailsRow(title: 'First Name', value: 'Ana De'),
+                      ProfileDetailsRow(title: 'Last Name', value: 'Armas'),
                     ],
                   ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceAround,
+                    children: const [
+                      ProfileDetailsRow(
+                          title: 'Date of Birth', value: '30 Apr 1988 (34)'),
+                      ProfileDetailsRow(title: 'Sex', value: 'Female'),
+                    ],
+                  ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceAround,
+                    children: const [
+                      ProfileDetailsRow(title: 'Blood Type', value: 'O+'),
+                      ProfileDetailsRow(title: 'Wheelchair', value: '-'),
+                    ],
+                  ),
+                  const ProfileDetailsColumn(
+                      title: 'Email', value: 'anadearmas@gmail.com'),
+                  const ProfileDetailsColumn(
+                      title: 'Father Name', value: 'Ramón'),
+                  const ProfileDetailsColumn(
+                      title: 'Mother Name', value: 'Ana'),
+                  const ProfileDetailsColumn(title: 'Spouse Name', value: '-'),
+                  const ProfileDetailsColumn(
+                      title: 'Emergency Contact Number',
+                      value: '(760)364-6964'),
                 ],
               ),
-            ),
-            sizedBox,
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceAround,
-              children: const [
-                ProfileDetailsRow(title: 'First Name', value: 'Ana De'),
-                ProfileDetailsRow(title: 'Last Name', value: 'Armas'),
-              ],
-            ),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceAround,
-              children: const [
-                ProfileDetailsRow(
-                    title: 'Date of Birth', value: '30 Apr 1988 (34)'),
-                ProfileDetailsRow(title: 'Sex', value: 'Female'),
-              ],
-            ),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceAround,
-              children: const [
-                ProfileDetailsRow(title: 'Blood Type', value: 'O+'),
-                ProfileDetailsRow(title: 'Wheelchair', value: '-'),
-              ],
-            ),
-            const ProfileDetailsColumn(title: 'Email', value: 'anadearmas@gmail.com'),
-            const ProfileDetailsColumn(title: 'Father Name', value: 'Ramón'),
-            const ProfileDetailsColumn(title: 'Mother Name', value: 'Ana'),
-            const ProfileDetailsColumn(title: 'Spouse Name', value: '-'),
-            const ProfileDetailsColumn(title: 'Emergency Contact Number', value: '(760)364-6964'),
-          ],
+            ],
+          ),
         ),
       ),
     );
@@ -128,11 +146,11 @@ class ProfileDetailsRow extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       padding: const EdgeInsets.only(
-        right: kDefaultPadding / 4,
+        right: kDefaultPadding,
         left: kDefaultPadding / 4,
         top: kDefaultPadding / 2,
       ),
-      width: MediaQuery.of(context).size.width / 2.47,
+      width: MediaQuery.of(context).size.width / 2,
       child: Row(
         mainAxisAlignment: MainAxisAlignment.end,
         crossAxisAlignment: CrossAxisAlignment.center,
@@ -167,7 +185,8 @@ class ProfileDetailsRow extends StatelessWidget {
             ],
           ),
           const Icon(
-            Icons.lock_outline,
+            Icons.lock_outline_rounded,
+            color: Color(0xFFA5A5A5),
             size: 20.0,
           ),
         ],
@@ -216,7 +235,8 @@ class ProfileDetailsColumn extends StatelessWidget {
           ],
         ),
         const Icon(
-          Icons.lock_outline,
+          Icons.lock_outline_rounded,
+          color: Color(0xFFA5A5A5),
           size: 20.0,
         ),
       ],
