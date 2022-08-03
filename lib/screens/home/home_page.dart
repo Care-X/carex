@@ -188,13 +188,11 @@ class HomePage extends StatelessWidget {
               padding: const EdgeInsets.fromLTRB(25, 0, 25, 0),
               child: ClipRRect(
                 borderRadius: BorderRadius.circular(18),
-                child: Container(
-                  child: const Image(
-                    image: AssetImage(
-                      'assets/images/map.png',
-                    ),
-                    fit: BoxFit.scaleDown,
+                child: const Image(
+                  image: AssetImage(
+                    'assets/images/map.png',
                   ),
+                  fit: BoxFit.scaleDown,
                 ),
               ),
             ),

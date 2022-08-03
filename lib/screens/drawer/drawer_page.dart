@@ -1,5 +1,3 @@
-// ignore: unused_import
-import 'package:carex/constants.dart';
 import 'package:carex/models/drawer_item.dart';
 import 'package:carex/screens/login/login_page.dart';
 import 'package:carex/screens/profile/profile_page.dart';

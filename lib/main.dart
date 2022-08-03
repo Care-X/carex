@@ -1,4 +1,3 @@
-import 'package:carex/screens/main_screen/main_page.dart';
 import 'package:carex/screens/welcome/welcome_page.dart';
 import 'package:flutter/material.dart';
 
