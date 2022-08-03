@@ -1,5 +1,4 @@
 import 'package:carex/theme/colors.dart';
-import 'package:carex/util/small_activity_card.dart';
 import 'package:flutter/material.dart';
 
 class SearchPage extends StatelessWidget {

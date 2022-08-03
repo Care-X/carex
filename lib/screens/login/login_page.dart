@@ -1,5 +1,3 @@
-// ignore: unused_import
-import 'package:carex/screens/home/home_page.dart';
 import 'package:carex/screens/main_screen/main_page.dart';
 import 'package:carex/screens/signup/signup_page.dart';
 import 'package:flutter/material.dart';
