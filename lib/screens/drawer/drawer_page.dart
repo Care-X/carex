@@ -1,4 +1,5 @@
 import 'package:carex/models/drawer_item.dart';
+import 'package:carex/screens/home/home_page.dart';
 import 'package:carex/screens/login/login_page.dart';
 import 'package:carex/screens/profile/profile_page.dart';
 import 'package:carex/theme/colors.dart';
@@ -23,7 +24,7 @@ class DrawerPage extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               IconButton(
-                onPressed: () {},
+                onPressed: () { },
                 icon: const Icon(
                   Icons.arrow_back_ios_new_rounded,
                   color: AppColors.white,

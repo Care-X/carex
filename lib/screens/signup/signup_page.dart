@@ -45,6 +45,7 @@ class _SignUpState extends State<SignUp> {
                               ),
                               fit: BoxFit.fill,
                               height: size.height / 2.2,
+                              width: size.width,
                             ),
                           ],
                         ),
@@ -156,12 +157,12 @@ class _SignUpState extends State<SignUp> {
                                 ElevatedButton(
                                   onPressed: () {
                                     Navigator.of(context).push(
-                                    MaterialPageRoute(
-                                      builder: (_) {
-                                        return  const MainScreen();
-                                      },
-                                    ),
-                                  );
+                                      MaterialPageRoute(
+                                        builder: (_) {
+                                          return const MainScreen();
+                                        },
+                                      ),
+                                    );
                                   },
                                   style: ElevatedButton.styleFrom(
                                     minimumSize: const Size.fromHeight(50),
