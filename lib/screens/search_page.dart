@@ -188,7 +188,7 @@ class SearchPage extends StatelessWidget {
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
                               Container(
-                                padding: const EdgeInsets.only(left: 10),
+                                padding: const EdgeInsets.only(left: 2),
                                 child: const Image(
                                   height: 110,
                                   image: AssetImage(
@@ -197,74 +197,79 @@ class SearchPage extends StatelessWidget {
                                   fit: BoxFit.scaleDown,
                                 ),
                               ),
-                              Container(
-                                padding: const EdgeInsets.all(10),
-                                child: Column(
-                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                  mainAxisAlignment:
-                                      MainAxisAlignment.spaceBetween,
-                                  children: [
-                                    Column(
-                                      crossAxisAlignment:
-                                          CrossAxisAlignment.start,
-                                      mainAxisAlignment:
-                                          MainAxisAlignment.spaceBetween,
-                                      children: [
-                                        const Text(
-                                          'National Hospital - Kandy',
-                                          style: TextStyle(
-                                            fontWeight: FontWeight.bold,
-                                            fontSize: 19,
+                              Expanded(
+                                child: Container(
+                                  padding: const EdgeInsets.all(5),
+                                  child: Column(
+                                    crossAxisAlignment:
+                                        CrossAxisAlignment.start,
+                                    mainAxisAlignment:
+                                        MainAxisAlignment.spaceBetween,
+                                    children: [
+                                      Column(
+                                        crossAxisAlignment:
+                                            CrossAxisAlignment.start,
+                                        mainAxisAlignment:
+                                            MainAxisAlignment.spaceBetween,
+                                        children: [
+                                          const Text(
+                                            'National Hospital - Kandy',
+                                            style: TextStyle(
+                                              fontWeight: FontWeight.bold,
+                                              fontSize: 19,
+                                            ),
                                           ),
-                                        ),
-                                        const SizedBox(
-                                          height: 2,
-                                        ),
-                                        const Text(
-                                          '1 Km away | 081X XXX XXX ',
-                                          style: TextStyle(
-                                            fontSize: 16,
+                                          const SizedBox(
+                                            height: 2,
                                           ),
-                                        ),
-                                        const SizedBox(height: 6),
-                                        Row(
-                                          mainAxisAlignment:
-                                              MainAxisAlignment.start,
-                                          children: [
-                                            Container(
-                                              padding: const EdgeInsets.all(3),
-                                              decoration: BoxDecoration(
-                                                borderRadius:
-                                                    BorderRadius.circular(5),
-                                                color: AppColors.skyBlue,
-                                              ),
-                                              child: const Icon(
-                                                Icons.phone,
-                                                color: AppColors.white,
-                                                size: 22,
-                                              ),
+                                          const Text(
+                                            '1 Km away | 081X XXX XXX ',
+                                            style: TextStyle(
+                                              fontSize: 16,
                                             ),
-                                            const SizedBox(
-                                              width: 10,
-                                            ),
-                                            Container(
-                                              padding: const EdgeInsets.all(3),
-                                              decoration: BoxDecoration(
-                                                borderRadius:
-                                                    BorderRadius.circular(5),
-                                                color: AppColors.skyBlue,
+                                          ),
+                                          const SizedBox(height: 6),
+                                          Row(
+                                            mainAxisAlignment:
+                                                MainAxisAlignment.start,
+                                            children: [
+                                              Container(
+                                                padding:
+                                                    const EdgeInsets.all(3),
+                                                decoration: BoxDecoration(
+                                                  borderRadius:
+                                                      BorderRadius.circular(5),
+                                                  color: AppColors.skyBlue,
+                                                ),
+                                                child: const Icon(
+                                                  Icons.phone,
+                                                  color: AppColors.white,
+                                                  size: 22,
+                                                ),
                                               ),
-                                              child: const Icon(
-                                                Icons.location_pin,
-                                                color: AppColors.white,
-                                                size: 22,
+                                              const SizedBox(
+                                                width: 10,
                                               ),
-                                            ),
-                                          ],
-                                        ),
-                                      ],
-                                    ),
-                                  ],
+                                              Container(
+                                                padding:
+                                                    const EdgeInsets.all(3),
+                                                decoration: BoxDecoration(
+                                                  borderRadius:
+                                                      BorderRadius.circular(5),
+                                                  color: AppColors.skyBlue,
+                                                ),
+                                                child: const Icon(
+                                                  Icons.location_pin,
+                                                  color: AppColors.white,
+                                                  size: 22,
+                                                ),
+                                              ),
+                                            ],
+                                          ),
+                                        ],
+                                      ),
+                                    ],
+                                  ),
                                 ),
                               ),
                             ],
@@ -292,7 +297,7 @@ class SearchPage extends StatelessWidget {
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
                               Container(
-                                padding: const EdgeInsets.only(left: 10),
+                                padding: const EdgeInsets.only(left: 2),
                                 child: const Image(
                                   height: 110,
                                   image: AssetImage(
@@ -301,74 +306,79 @@ class SearchPage extends StatelessWidget {
                                   fit: BoxFit.scaleDown,
                                 ),
                               ),
-                              Container(
-                                padding: const EdgeInsets.all(10),
-                                child: Column(
-                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                  mainAxisAlignment:
-                                      MainAxisAlignment.spaceBetween,
-                                  children: [
-                                    Column(
-                                      crossAxisAlignment:
-                                          CrossAxisAlignment.start,
-                                      mainAxisAlignment:
-                                          MainAxisAlignment.spaceBetween,
-                                      children: [
-                                        const Text(
-                                          'National Hospital - Kandy',
-                                          style: TextStyle(
-                                            fontWeight: FontWeight.bold,
-                                            fontSize: 19,
+                              Expanded(
+                                child: Container(
+                                  padding: const EdgeInsets.all(5),
+                                  child: Column(
+                                    crossAxisAlignment:
+                                        CrossAxisAlignment.start,
+                                    mainAxisAlignment:
+                                        MainAxisAlignment.spaceBetween,
+                                    children: [
+                                      Column(
+                                        crossAxisAlignment:
+                                            CrossAxisAlignment.start,
+                                        mainAxisAlignment:
+                                            MainAxisAlignment.spaceBetween,
+                                        children: [
+                                          const Text(
+                                            'National Hospital - Kandy',
+                                            style: TextStyle(
+                                              fontWeight: FontWeight.bold,
+                                              fontSize: 19,
+                                            ),
                                           ),
-                                        ),
-                                        const SizedBox(
-                                          height: 2,
-                                        ),
-                                        const Text(
-                                          '1 Km away | 081X XXX XXX ',
-                                          style: TextStyle(
-                                            fontSize: 16,
+                                          const SizedBox(
+                                            height: 2,
                                           ),
-                                        ),
-                                        const SizedBox(height: 6),
-                                        Row(
-                                          mainAxisAlignment:
-                                              MainAxisAlignment.start,
-                                          children: [
-                                            Container(
-                                              padding: const EdgeInsets.all(3),
-                                              decoration: BoxDecoration(
-                                                borderRadius:
-                                                    BorderRadius.circular(5),
-                                                color: AppColors.skyBlue,
-                                              ),
-                                              child: const Icon(
-                                                Icons.phone,
-                                                color: AppColors.white,
-                                                size: 22,
-                                              ),
+                                          const Text(
+                                            '1 Km away | 081X XXX XXX ',
+                                            style: TextStyle(
+                                              fontSize: 16,
                                             ),
-                                            const SizedBox(
-                                              width: 10,
-                                            ),
-                                            Container(
-                                              padding: const EdgeInsets.all(3),
-                                              decoration: BoxDecoration(
-                                                borderRadius:
-                                                    BorderRadius.circular(5),
-                                                color: AppColors.skyBlue,
+                                          ),
+                                          const SizedBox(height: 6),
+                                          Row(
+                                            mainAxisAlignment:
+                                                MainAxisAlignment.start,
+                                            children: [
+                                              Container(
+                                                padding:
+                                                    const EdgeInsets.all(3),
+                                                decoration: BoxDecoration(
+                                                  borderRadius:
+                                                      BorderRadius.circular(5),
+                                                  color: AppColors.skyBlue,
+                                                ),
+                                                child: const Icon(
+                                                  Icons.phone,
+                                                  color: AppColors.white,
+                                                  size: 22,
+                                                ),
                                               ),
-                                              child: const Icon(
-                                                Icons.location_pin,
-                                                color: AppColors.white,
-                                                size: 22,
+                                              const SizedBox(
+                                                width: 10,
                                               ),
-                                            ),
-                                          ],
-                                        ),
-                                      ],
-                                    ),
-                                  ],
+                                              Container(
+                                                padding:
+                                                    const EdgeInsets.all(3),
+                                                decoration: BoxDecoration(
+                                                  borderRadius:
+                                                      BorderRadius.circular(5),
+                                                  color: AppColors.skyBlue,
+                                                ),
+                                                child: const Icon(
+                                                  Icons.location_pin,
+                                                  color: AppColors.white,
+                                                  size: 22,
+                                                ),
+                                              ),
+                                            ],
+                                          ),
+                                        ],
+                                      ),
+                                    ],
+                                  ),
                                 ),
                               ),
                             ],
@@ -386,7 +396,7 @@ class SearchPage extends StatelessWidget {
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
                               Container(
-                                padding: const EdgeInsets.only(left: 10),
+                                padding: const EdgeInsets.only(left: 2),
                                 child: const Image(
                                   height: 110,
                                   image: AssetImage(
@@ -395,74 +405,79 @@ class SearchPage extends StatelessWidget {
                                   fit: BoxFit.scaleDown,
                                 ),
                               ),
-                              Container(
-                                padding: const EdgeInsets.all(10),
-                                child: Column(
-                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                  mainAxisAlignment:
-                                      MainAxisAlignment.spaceBetween,
-                                  children: [
-                                    Column(
-                                      crossAxisAlignment:
-                                          CrossAxisAlignment.start,
-                                      mainAxisAlignment:
-                                          MainAxisAlignment.spaceBetween,
-                                      children: [
-                                        const Text(
-                                          'National Hospital - Kandy',
-                                          style: TextStyle(
-                                            fontWeight: FontWeight.bold,
-                                            fontSize: 19,
+                              Expanded(
+                                child: Container(
+                                  padding: const EdgeInsets.all(5),
+                                  child: Column(
+                                    crossAxisAlignment:
+                                        CrossAxisAlignment.start,
+                                    mainAxisAlignment:
+                                        MainAxisAlignment.spaceBetween,
+                                    children: [
+                                      Column(
+                                        crossAxisAlignment:
+                                            CrossAxisAlignment.start,
+                                        mainAxisAlignment:
+                                            MainAxisAlignment.spaceBetween,
+                                        children: [
+                                          const Text(
+                                            'National Hospital - Kandy',
+                                            style: TextStyle(
+                                              fontWeight: FontWeight.bold,
+                                              fontSize: 19,
+                                            ),
                                           ),
-                                        ),
-                                        const SizedBox(
-                                          height: 2,
-                                        ),
-                                        const Text(
-                                          '1 Km away | 081X XXX XXX ',
-                                          style: TextStyle(
-                                            fontSize: 16,
+                                          const SizedBox(
+                                            height: 2,
                                           ),
-                                        ),
-                                        const SizedBox(height: 6),
-                                        Row(
-                                          mainAxisAlignment:
-                                              MainAxisAlignment.start,
-                                          children: [
-                                            Container(
-                                              padding: const EdgeInsets.all(3),
-                                              decoration: BoxDecoration(
-                                                borderRadius:
-                                                    BorderRadius.circular(5),
-                                                color: AppColors.skyBlue,
-                                              ),
-                                              child: const Icon(
-                                                Icons.phone,
-                                                color: AppColors.white,
-                                                size: 22,
-                                              ),
+                                          const Text(
+                                            '1 Km away | 081X XXX XXX ',
+                                            style: TextStyle(
+                                              fontSize: 16,
                                             ),
-                                            const SizedBox(
-                                              width: 10,
-                                            ),
-                                            Container(
-                                              padding: const EdgeInsets.all(3),
-                                              decoration: BoxDecoration(
-                                                borderRadius:
-                                                    BorderRadius.circular(5),
-                                                color: AppColors.skyBlue,
+                                          ),
+                                          const SizedBox(height: 6),
+                                          Row(
+                                            mainAxisAlignment:
+                                                MainAxisAlignment.start,
+                                            children: [
+                                              Container(
+                                                padding:
+                                                    const EdgeInsets.all(3),
+                                                decoration: BoxDecoration(
+                                                  borderRadius:
+                                                      BorderRadius.circular(5),
+                                                  color: AppColors.skyBlue,
+                                                ),
+                                                child: const Icon(
+                                                  Icons.phone,
+                                                  color: AppColors.white,
+                                                  size: 22,
+                                                ),
                                               ),
-                                              child: const Icon(
-                                                Icons.location_pin,
-                                                color: AppColors.white,
-                                                size: 22,
+                                              const SizedBox(
+                                                width: 10,
                                               ),
-                                            ),
-                                          ],
-                                        ),
-                                      ],
-                                    ),
-                                  ],
+                                              Container(
+                                                padding:
+                                                    const EdgeInsets.all(3),
+                                                decoration: BoxDecoration(
+                                                  borderRadius:
+                                                      BorderRadius.circular(5),
+                                                  color: AppColors.skyBlue,
+                                                ),
+                                                child: const Icon(
+                                                  Icons.location_pin,
+                                                  color: AppColors.white,
+                                                  size: 22,
+                                                ),
+                                              ),
+                                            ],
+                                          ),
+                                        ],
+                                      ),
+                                    ],
+                                  ),
                                 ),
                               ),
                             ],
@@ -480,7 +495,7 @@ class SearchPage extends StatelessWidget {
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
                               Container(
-                                padding: const EdgeInsets.only(left: 10),
+                                padding: const EdgeInsets.only(left: 2),
                                 child: const Image(
                                   height: 110,
                                   image: AssetImage(
@@ -489,74 +504,79 @@ class SearchPage extends StatelessWidget {
                                   fit: BoxFit.scaleDown,
                                 ),
                               ),
-                              Container(
-                                padding: const EdgeInsets.all(10),
-                                child: Column(
-                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                  mainAxisAlignment:
-                                      MainAxisAlignment.spaceBetween,
-                                  children: [
-                                    Column(
-                                      crossAxisAlignment:
-                                          CrossAxisAlignment.start,
-                                      mainAxisAlignment:
-                                          MainAxisAlignment.spaceBetween,
-                                      children: [
-                                        const Text(
-                                          'National Hospital - Kandy',
-                                          style: TextStyle(
-                                            fontWeight: FontWeight.bold,
-                                            fontSize: 19,
+                              Expanded(
+                                child: Container(
+                                  padding: const EdgeInsets.all(5),
+                                  child: Column(
+                                    crossAxisAlignment:
+                                        CrossAxisAlignment.start,
+                                    mainAxisAlignment:
+                                        MainAxisAlignment.spaceBetween,
+                                    children: [
+                                      Column(
+                                        crossAxisAlignment:
+                                            CrossAxisAlignment.start,
+                                        mainAxisAlignment:
+                                            MainAxisAlignment.spaceBetween,
+                                        children: [
+                                          const Text(
+                                            'National Hospital - Kandy',
+                                            style: TextStyle(
+                                              fontWeight: FontWeight.bold,
+                                              fontSize: 19,
+                                            ),
                                           ),
-                                        ),
-                                        const SizedBox(
-                                          height: 2,
-                                        ),
-                                        const Text(
-                                          '1 Km away | 081X XXX XXX ',
-                                          style: TextStyle(
-                                            fontSize: 16,
+                                          const SizedBox(
+                                            height: 2,
                                           ),
-                                        ),
-                                        const SizedBox(height: 6),
-                                        Row(
-                                          mainAxisAlignment:
-                                              MainAxisAlignment.start,
-                                          children: [
-                                            Container(
-                                              padding: const EdgeInsets.all(3),
-                                              decoration: BoxDecoration(
-                                                borderRadius:
-                                                    BorderRadius.circular(5),
-                                                color: AppColors.skyBlue,
-                                              ),
-                                              child: const Icon(
-                                                Icons.phone,
-                                                color: AppColors.white,
-                                                size: 22,
-                                              ),
+                                          const Text(
+                                            '1 Km away | 081X XXX XXX ',
+                                            style: TextStyle(
+                                              fontSize: 16,
                                             ),
-                                            const SizedBox(
-                                              width: 10,
-                                            ),
-                                            Container(
-                                              padding: const EdgeInsets.all(3),
-                                              decoration: BoxDecoration(
-                                                borderRadius:
-                                                    BorderRadius.circular(5),
-                                                color: AppColors.skyBlue,
+                                          ),
+                                          const SizedBox(height: 6),
+                                          Row(
+                                            mainAxisAlignment:
+                                                MainAxisAlignment.start,
+                                            children: [
+                                              Container(
+                                                padding:
+                                                    const EdgeInsets.all(3),
+                                                decoration: BoxDecoration(
+                                                  borderRadius:
+                                                      BorderRadius.circular(5),
+                                                  color: AppColors.skyBlue,
+                                                ),
+                                                child: const Icon(
+                                                  Icons.phone,
+                                                  color: AppColors.white,
+                                                  size: 22,
+                                                ),
                                               ),
-                                              child: const Icon(
-                                                Icons.location_pin,
-                                                color: AppColors.white,
-                                                size: 22,
+                                              const SizedBox(
+                                                width: 10,
                                               ),
-                                            ),
-                                          ],
-                                        ),
-                                      ],
-                                    ),
-                                  ],
+                                              Container(
+                                                padding:
+                                                    const EdgeInsets.all(3),
+                                                decoration: BoxDecoration(
+                                                  borderRadius:
+                                                      BorderRadius.circular(5),
+                                                  color: AppColors.skyBlue,
+                                                ),
+                                                child: const Icon(
+                                                  Icons.location_pin,
+                                                  color: AppColors.white,
+                                                  size: 22,
+                                                ),
+                                              ),
+                                            ],
+                                          ),
+                                        ],
+                                      ),
+                                    ],
+                                  ),
                                 ),
                               ),
                             ],

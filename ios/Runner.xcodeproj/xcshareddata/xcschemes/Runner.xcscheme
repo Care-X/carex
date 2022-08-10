@@ -17,7 +17,7 @@
                BlueprintIdentifier = "97C146ED1CF9000F007C117D"
                BuildableName = "Runner.app"
                BlueprintName = "Runner"
-               ReferencedContainer = "container:Runner.xcodeproj">
+               ReferencedContainer = "container:CareX.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,14 +33,14 @@
             BlueprintIdentifier = "97C146ED1CF9000F007C117D"
             BuildableName = "Runner.app"
             BlueprintName = "Runner"
-            ReferencedContainer = "container:Runner.xcodeproj">
+            ReferencedContainer = "container:CareX.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <Testables>
       </Testables>
    </TestAction>
    <LaunchAction
-      buildConfiguration = "Debug"
+      buildConfiguration = "Release"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       launchStyle = "0"
@@ -59,6 +59,15 @@
             ReferencedContainer = "container:Runner.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "97C146ED1CF9000F007C117D"
+            BuildableName = "Runner.app"
+            BlueprintName = "Runner"
+            ReferencedContainer = "container:CareX.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Profile"
@@ -73,7 +82,7 @@
             BlueprintIdentifier = "97C146ED1CF9000F007C117D"
             BuildableName = "Runner.app"
             BlueprintName = "Runner"
-            ReferencedContainer = "container:Runner.xcodeproj">
+            ReferencedContainer = "container:CareX.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

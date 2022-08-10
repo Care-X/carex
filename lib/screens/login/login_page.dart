@@ -43,8 +43,9 @@ class _LoginState extends State<Login> {
                               image: const AssetImage(
                                 'assets/images/img-3.png',
                               ),
-                              fit: BoxFit.scaleDown,
-                              height: size.height / 2.2,
+                              fit: BoxFit.fill,
+                              height: size.height / 2,
+                              width: size.width,
                             ),
                           ],
                         ),
@@ -132,7 +133,7 @@ class _LoginState extends State<Login> {
                                   Navigator.of(context).push(
                                     MaterialPageRoute(
                                       builder: (_) {
-                                        return  const MainScreen();
+                                        return const MainScreen();
                                       },
                                     ),
                                   );
